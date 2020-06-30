@@ -15,6 +15,7 @@
   "devDependencies": {
     "@babel/core": "7.10.3",
     "@govtnz/ds": "0.1.2",
+    "@stencil/core": "1.15.0",
     "@storybook/web-components": "5.3.19",
     "babel-loader": "8.1.0"
   }

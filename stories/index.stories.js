@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 
-// import '../my-component.js';
+import '../src/components/test.tsx';
 
 export default {
   title: 'Demo',

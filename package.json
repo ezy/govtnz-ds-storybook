@@ -1,6 +1,6 @@
 {
-  "name": "storybook",
-  "version": "1.0.0",
+  "name": "msd-web-components",
+  "version": "0.0.1alpha",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,9 @@
   "devDependencies": {
     "@babel/core": "7.10.3",
     "@govtnz/ds": "0.1.2",
-    "@stencil/core": "1.15.0",
+    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/web-components": "5.3.19",
-    "babel-loader": "8.1.0"
+    "babel-loader": "8.1.0",
+    "lit-html": "^1.2.1"
   }
 }

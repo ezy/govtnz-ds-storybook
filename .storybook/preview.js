@@ -4,7 +4,7 @@ import {
   configure,
   addParameters,
   // setCustomElements,
-} from '@storybook/web-components';
+} from "@storybook/web-components";
 
 // import customElements from '../custom-elements.json';
 
@@ -12,14 +12,14 @@ import {
 
 addParameters({
   docs: {
-    iframeHeight: '200px',
+    iframeHeight: "200px",
   },
 });
 
 // configure(require.context('../stories', true, /\.stories\.(js|mdx)$/), module);
 
 // force full reload to not reregister web components
-const req = require.context('../stories', true, /\.stories\.(js|mdx)$/);
+const req = require.context("../stories", true, /\.stories\.(js|mdx)$/);
 configure(req, module);
 if (module.hot) {
   module.hot.accept(req.id, () => {

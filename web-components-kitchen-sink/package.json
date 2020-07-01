@@ -1,21 +1,18 @@
 {
-  "name": "msd-web-components",
-  "version": "0.0.1-beta",
+  "name": "web-components-kitchen-sink",
+  "version": "6.0.0-beta.38",
+  "private": true,
   "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 9006"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "7.10.3",
-    "@govtnz/ds": "0.1.2",
-    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-a11y": "6.0.0-beta.38",
     "@storybook/addon-actions": "6.0.0-beta.38",
     "@storybook/addon-backgrounds": "6.0.0-beta.38",
     "@storybook/addon-controls": "6.0.0-beta.38",
@@ -32,8 +29,16 @@
     "@storybook/core": "6.0.0-beta.38",
     "@storybook/core-events": "6.0.0-beta.38",
     "@storybook/source-loader": "6.0.0-beta.38",
-    "@storybook/web-components": "5.3.19",
-    "babel-loader": "8.1.0",
-    "lit-element": "^2.3.1"
+    "@storybook/web-components": "6.0.0-beta.38",
+    "babel-loader": "^8.0.5",
+    "eventemitter3": "^4.0.0",
+    "format-json": "^1.0.3",
+    "global": "^4.3.2",
+    "lit-element": "^2.2.1"
+  },
+  "storybook": {
+    "chromatic": {
+      "projectToken": "npm5gsofwkf"
+    }
   }
 }

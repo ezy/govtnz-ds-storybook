@@ -1,8 +1,5 @@
 /* global window */
 import { configure, addParameters } from "@storybook/web-components";
-import { withA11y } from "@storybook/addon-a11y";
-
-addDecorator(withA11y);
 
 addParameters({
   a11y: {

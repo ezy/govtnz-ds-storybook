@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import { html } from "lit-html";
-import "../demo-wc-card.js";
+import "./demo-card.js";
 
 export default {
   title: "Demo Card",

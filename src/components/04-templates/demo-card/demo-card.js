@@ -12,7 +12,7 @@ import { demoCardStyle } from "./demo-card.css.js";
  * @cssprop --demo-card-front-color - Font color for front
  * @cssprop --demo-card-back-color - Font color for back
  */
-export class demoCard extends LitElement {
+export class DemoCard extends LitElement {
   static get properties() {
     return {
       backSide: {

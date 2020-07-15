@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/web-components";
 import { html } from "lit-element";
 import "./simple-greeting.js";
 
-storiesOf("Buttons", module)
+storiesOf("Simple greeting", module)
   .add("simple-greeting", () => {
     const el = document.createElement("simple-greeting");
     return el;

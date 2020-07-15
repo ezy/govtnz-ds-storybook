@@ -1,6 +1,9 @@
 /* eslint-disable import/extensions */
 import { html } from "lit-html";
-import "./button.js";
+// import "./button.js";
+import { CustomButton } from './button.js';
+
+customElements.define('cb', CustomButton);
 
 export default {
   title: "Button",
@@ -8,4 +11,4 @@ export default {
 };
 
 export const GovtButton = () =>
-  html`<CustomButton class="btn">Test</CustomButton>`;
+  html`${CustomButton()}`;

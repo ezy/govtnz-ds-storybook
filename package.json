@@ -7,7 +7,7 @@
     "node": ">=13.14.0"
   },
   "scripts": {
-    "build:nzgovt": "node bin/build-nzgovt.mjs",
+    "build:nzgovt": "node bin/build-nzgovt.js",
     "build:storybook": "build-storybook",
     "postinstall": "yarn requirements-check",
     "requirements-check": "node bin/check-node-version.js",
@@ -16,8 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {},
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.10.4",
     "@govtnz/ds": "0.2.0",

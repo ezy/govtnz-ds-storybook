@@ -15,7 +15,7 @@ addParameters({
 });
 
 // force full reload to not reregister web components
-const req = require.context("../src/components", true, /\.stories\.(js|mdx)$/);
+const req = require.context("../src/stories", true, /\.stories\.(js|mdx)$/);
 configure(req, module);
 if (module.hot) {
   module.hot.accept(req.id, () => {

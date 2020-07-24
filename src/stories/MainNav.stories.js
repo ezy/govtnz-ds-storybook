@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/MainNav.css";
-
-export default {
-    title: "nzgovt-import",
-    component: "MainNav",
-};
-
-export const MainNav = () => html`<nav aria-label="Main" class="g-main-nav" role="navigation">
+      import "../template-sources/nzgovt-import/MainNav.css";
+      
+      export default {
+          title: "nzgovt-import",
+          component: "MainNav",
+      };
+      
+      export const MainNav = () => html`<nav aria-label="Main" class="g-main-nav" role="navigation">
   <button aria-expanded="example" class="g-main-nav__button g-main-nav--open">
     Menu
     <svg

@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/Alert.css";
-
-export default {
-    title: "nzgovt-import",
-    component: "Alert",
-};
-
-export const Alert = () => html`<div aria-atomic="true" aria-live="polite" role="note">
+      import "../template-sources/nzgovt-import/Alert.css";
+      
+      export default {
+          title: "nzgovt-import",
+          component: "Alert",
+      };
+      
+      export const Alert = () => html`<div aria-atomic="true" aria-live="polite" role="note">
   <div class="g-alert g-alert--info">
     Example alert content
 

@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/NzgLogo.css";
-
-export default {
-    title: "nzgovt-import",
-    component: "NzgLogo",
-};
-
-export const NzgLogo = () => html`<svg
+      import "../template-sources/nzgovt-import/NzgLogo.css";
+      
+      export default {
+          title: "nzgovt-import",
+          component: "NzgLogo",
+      };
+      
+      export const NzgLogo = () => html`<svg
   class="g-nzg-logo example"
   focusable="false"
   height="24"

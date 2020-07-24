@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/DiaLogo.css";
-
-export default {
-    title: "nzgovt-import",
-    component: "DiaLogo",
-};
-
-export const DiaLogo = () => html`<svg
+      import "../template-sources/nzgovt-import/DiaLogo.css";
+      
+      export default {
+          title: "nzgovt-import",
+          component: "DiaLogo",
+      };
+      
+      export const DiaLogo = () => html`<svg
   class="g-dia-logo example"
   focusable="false"
   height="64"

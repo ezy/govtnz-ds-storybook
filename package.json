@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build:nzgovt": "node bin/build-nzgovt.js",
+    "build:stories": "node bin/build-storybook.js",
     "build:storybook": "build-storybook",
     "postinstall": "yarn requirements-check",
     "requirements-check": "node bin/check-node-version.js",

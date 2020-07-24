@@ -6,15 +6,14 @@ const writeStories = async (sourceFolder, nameSpace) => {
     `src/template-sources/${sourceFolder}/${nameSpace}.html`
   );
   const storyPattern = () => `import { html } from "lit-html";
-    import "${filePath}/${nameSpace}.css";
-    
-    export default {
-      title: "${sourceFolder}",
-      component: "${nameSpace}",
-    };
-    
-    export const ${nameSpace} = () =>
-      html\`${htmlFile}\`;`;
+import "${filePath}/${nameSpace}.css";
+
+export default {
+    title: "${sourceFolder}",
+    component: "${nameSpace}",
+};
+
+export const ${nameSpace} = () => html\`${htmlFile}\`;`;
 
   const storyPath = `src/stories/${nameSpace}.stories.js`;
 

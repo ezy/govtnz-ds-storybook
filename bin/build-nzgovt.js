@@ -10,6 +10,7 @@ try {
   console.log(
     "Begin copying html and css from nzgovt-ds to src/template-sources"
   );
+  // TODO: only copy html and css files
   fs.copySync(htmlPath, target);
   fs.copySync(cssPath, target);
   console.log("Copying nzgovt-ds to src/template-sources complete");

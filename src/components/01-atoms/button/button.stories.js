@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import { html } from "lit-html";
 import "./button.js";
 

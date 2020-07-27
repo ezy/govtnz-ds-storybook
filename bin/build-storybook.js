@@ -5,7 +5,7 @@ const path = require("path");
 const makeStorybook = (sourceFolder) => {
   const writeStories = (nameSpace) => {
     const htmlFile = fs.readFileSync(
-      `src/template-sources/${sourceFolder}/${nameSpace}.html`
+      `src/template-sources/${sourceFolder}/${nameSpace}.html`,
     );
 
     const storyPattern = () => `import { html } from "lit-html";

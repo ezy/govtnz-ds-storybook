@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-      import "../template-sources/nzgovt-import/DateInput.css";
-      
-      export default {
-          title: "nzgovt-import",
-          component: "DateInput",
-      };
-      
-      export const DateInput = () => html`<div class="g-dateInput-form-group">
+import "../template-sources/nzgovt-import/DateInput.css";
+
+export default {
+  title: "nzgovt-import",
+  component: "DateInput",
+};
+
+export const DateInput = () => html`<div class="g-dateInput-form-group">
   <fieldset class="g-dateInput-fieldset" role="group">
     <legend class="g-dateInput-fieldset__legend">
       Example label
@@ -68,5 +68,4 @@ import { html } from "lit-html";
       </div>
     </div>
   </fieldset>
-</div>
-`;
+</div> `;

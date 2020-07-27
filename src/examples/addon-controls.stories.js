@@ -1,10 +1,10 @@
 /* eslint-disable import/extensions */
-import { html } from 'lit-html';
-import '../demo-wc-card.js';
+import { html } from "lit-html";
+import "../demo-wc-card.js";
 
 export default {
-  title: 'Addons/Controls',
-  component: 'demo-wc-card',
+  title: "Addons/Controls",
+  component: "demo-wc-card",
 };
 
 const CardStory = ({ backSide, header, rows }) =>
@@ -21,13 +21,13 @@ export const Back = CardStory.bind({});
 Back.args = { ...Front.args, backSide: true };
 
 export const FrontOwnHeader = CardStory.bind({});
-FrontOwnHeader.args = { ...Front.args, header: 'My own Header' };
+FrontOwnHeader.args = { ...Front.args, header: "My own Header" };
 
 export const BackWithData = CardStory.bind({});
 BackWithData.args = {
   ...Back.args,
   rows: [
-    { header: 'health', value: '200' },
-    { header: 'mana', value: '100' },
+    { header: "health", value: "200" },
+    { header: "mana", value: "100" },
   ],
 };

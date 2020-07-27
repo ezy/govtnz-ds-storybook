@@ -1,104 +1,107 @@
 import { html } from "lit-html";
-      import "../template-sources/nzgovt-import/Alert.css";
-      
-      export default {
-          title: "nzgovt-import",
-          component: "Alert",
-      };
-      
-      export const Alert = () => html`<div aria-atomic="true" aria-live="polite" role="note">
-  <div class="g-alert g-alert--info">
-    Example alert content
-  </div>
-</div>
+import "../template-sources/nzgovt-import/Alert.css";
 
-<div role="note">
-  <div class="g-alert g-alert--info">
-    Example alert content
-  </div>
-</div>
+export default {
+  title: "nzgovt-import",
+  component: "Alert",
+};
 
-<div aria-atomic="true" aria-live="polite" role="note">
-  <div class="g-alert g-alert--warning">
-    Example alert content
+export const Alert = () => html`<div
+    aria-atomic="true"
+    aria-live="polite"
+    role="note"
+  >
+    <div class="g-alert g-alert--info">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div aria-atomic="true" aria-live="polite" role="note">
-  <div class="g-alert g-alert--warning">
-    Example alert content
+  <div role="note">
+    <div class="g-alert g-alert--info">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
-  <div class="g-alert g-alert--success">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note">
+    <div class="g-alert g-alert--warning">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
-  <div class="g-alert g-alert--success">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note">
+    <div class="g-alert g-alert--warning">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
-  <div class="g-alert g-alert--error">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+    <div class="g-alert g-alert--success">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
-  <div class="g-alert g-alert--error">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+    <div class="g-alert g-alert--success">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note">
-  <div class="g-alert g-alert--info">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+    <div class="g-alert g-alert--error">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note">
-  <div class="g-alert g-alert--info">
-    Example alert content
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+    <div class="g-alert g-alert--error">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note">
-  <div class="g-alert g-alert--warning">
-    Example alert content
+  <div role="note">
+    <div class="g-alert g-alert--info">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note">
-  <div class="g-alert g-alert--warning">
-    Example alert content
+  <div role="note">
+    <div class="g-alert g-alert--info">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note" tabindex="-1">
-  <div class="g-alert g-alert--success">
-    Example alert content
+  <div role="note">
+    <div class="g-alert g-alert--warning">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note" tabindex="-1">
-  <div class="g-alert g-alert--success">
-    Example alert content
+  <div role="note">
+    <div class="g-alert g-alert--warning">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note" tabindex="-1">
-  <div class="g-alert g-alert--error">
-    Example alert content
+  <div role="note" tabindex="-1">
+    <div class="g-alert g-alert--success">
+      Example alert content
+    </div>
   </div>
-</div>
 
-<div role="note" tabindex="-1">
-  <div class="g-alert g-alert--error">
-    Example alert content
+  <div role="note" tabindex="-1">
+    <div class="g-alert g-alert--success">
+      Example alert content
+    </div>
   </div>
-</div>
-`;
+
+  <div role="note" tabindex="-1">
+    <div class="g-alert g-alert--error">
+      Example alert content
+    </div>
+  </div>
+
+  <div role="note" tabindex="-1">
+    <div class="g-alert g-alert--error">
+      Example alert content
+    </div>
+  </div> `;

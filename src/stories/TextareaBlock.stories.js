@@ -1,12 +1,12 @@
 import { html } from "lit-html";
-      import "../template-sources/nzgovt-import/TextareaBlock.css";
-      
-      export default {
-          title: "nzgovt-import",
-          component: "TextareaBlock",
-      };
-      
-      export const TextareaBlock = () => html`<div class="g-textareaBlock-form-group">
+import "../template-sources/nzgovt-import/TextareaBlock.css";
+
+export default {
+  title: "nzgovt-import",
+  component: "TextareaBlock",
+};
+
+export const TextareaBlock = () => html`<div class="g-textareaBlock-form-group">
   <label class="g-textareaBlock-label">
     Label text
   </label>
@@ -27,5 +27,4 @@ import { html } from "lit-html";
     name="example"
     autocomplete="example"
   ></textarea>
-</div>
-`;
+</div> `;

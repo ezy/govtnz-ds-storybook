@@ -8,7 +8,7 @@ const target = path.join("src", "template-sources", "nzgovt-import");
 
 try {
   console.log(
-    "Begin copying html and css from nzgovt-ds to src/template-sources"
+    "Begin copying html and css from nzgovt-ds to src/template-sources",
   );
   // TODO: only copy html and css files
   fs.copySync(htmlPath, target);

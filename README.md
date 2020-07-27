@@ -1,6 +1,6 @@
 # Custom theming for govtnz Design System
 
-This is a light-weight POC with the aim of producing a govt front-end component library using storybook, built on top of the [govtnz Design System (Alpha)](https://github.com/GOVTNZ/govtnz-design-system).
+This is a light-weight POC with the aim of producing a govt front-end component library using storybook, built on top of the [GovtNZ Design System (Alpha)](https://github.com/GOVTNZ/govtnz-design-system).
 
 ## Abstract
 

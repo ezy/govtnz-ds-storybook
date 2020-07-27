@@ -15,7 +15,7 @@
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
     "update:nzgovt": "yarn add -D @govtnz/ds",
-    "upgrade:nzgovt": "yarn update:nzgovt && build:nzgovt"
+    "upgrade:nzgovt": "yarn update:nzgovt && yarn build:nzgovt"
   },
   "keywords": [],
   "author": "",

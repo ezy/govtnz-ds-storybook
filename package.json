@@ -27,7 +27,7 @@
     "@storybook/addon-a11y": "5.3.19",
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-backgrounds": "5.3.19",
-    "@storybook/addon-controls": "5.3.19",
+    "@storybook/addon-controls": "6.0.0-rc.14",
     "@storybook/addon-docs": "5.3.19",
     "@storybook/addon-events": "5.3.19",
     "@storybook/addon-jest": "5.3.19",

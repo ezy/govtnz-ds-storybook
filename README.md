@@ -2,6 +2,8 @@
 
 This is a light-weight POC with the aim of producing a govt front-end component library using storybook, built on top of the [GovtNZ Design System (Alpha)](https://github.com/GOVTNZ/govtnz-design-system).
 
+[See the storybook demo](https://ezra.keddell.nz/govtnz-ds-storybook)
+
 ## Abstract
 
 The philosophy behind it's build aims to:

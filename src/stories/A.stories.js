@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-      import "../template-sources/overide/A.css";
+      import "../template-sources/custom/A.css";
       
       export default {
-          title: "overide",
+          title: "custom",
           component: "A",
       };
       

@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-      import "../template-sources/nzgovt-import/A.css";
+      import "../template-sources/overide/A.css";
       
       export default {
-          title: "nzgovt-import",
+          title: "overide",
           component: "A",
       };
       

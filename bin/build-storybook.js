@@ -37,3 +37,4 @@ const makeStorybook = (sourceFolder) => {
 };
 
 makeStorybook("nzgovt-import");
+makeStorybook("custom");

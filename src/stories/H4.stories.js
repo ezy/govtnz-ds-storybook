@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/H4.css";
+import "../template-sources/govtnz-import/H4.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "H4",
 };
 

@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/FooterLinks.css";
+import "../template-sources/govtnz-import/FooterLinks.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "FooterLinks",
 };
 

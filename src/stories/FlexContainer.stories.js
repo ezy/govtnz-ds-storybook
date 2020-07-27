@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/FlexContainer.css";
+import "../template-sources/govtnz-import/FlexContainer.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "FlexContainer",
 };
 

@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/FlexRow.css";
+import "../template-sources/govtnz-import/FlexRow.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "FlexRow",
 };
 

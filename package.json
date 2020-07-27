@@ -7,15 +7,15 @@
     "node": ">=13.14.0"
   },
   "scripts": {
-    "build:nzgovt": "node bin/build-nzgovt.js",
+    "build:govtnz": "node bin/build-govtnz.js",
     "build:stories": "node bin/build-storybook.js && yarn lint",
     "build:storybook": "build-storybook",
     "postinstall": "yarn requirements-check",
     "requirements-check": "node bin/check-node-version.js",
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update:nzgovt": "yarn add -D @govtnz/ds",
-    "upgrade:nzgovt": "yarn update:nzgovt && yarn build:nzgovt && yarn build:stories",
+    "update:govtnz": "yarn add -D @govtnz/ds",
+    "upgrade:govtnz": "yarn update:govtnz && yarn build:govtnz && yarn build:stories",
     "lint": "yarn prettier --write ."
   },
   "keywords": [],

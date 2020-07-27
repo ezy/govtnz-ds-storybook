@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/TextareaBlock.css";
+import "../template-sources/govtnz-import/TextareaBlock.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "TextareaBlock",
 };
 

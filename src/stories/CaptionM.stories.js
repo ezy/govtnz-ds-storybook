@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/CaptionM.css";
+import "../template-sources/govtnz-import/CaptionM.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "CaptionM",
 };
 

@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/FormDivider.css";
+import "../template-sources/govtnz-import/FormDivider.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "FormDivider",
 };
 

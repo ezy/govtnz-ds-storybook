@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/MainNavLink.css";
+import "../template-sources/govtnz-import/MainNavLink.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "MainNavLink",
 };
 

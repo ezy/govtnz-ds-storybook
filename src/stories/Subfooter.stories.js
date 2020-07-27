@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/Subfooter.css";
+import "../template-sources/govtnz-import/Subfooter.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "Subfooter",
 };
 

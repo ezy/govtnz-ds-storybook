@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/FlexColumn.css";
+import "../template-sources/govtnz-import/FlexColumn.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "FlexColumn",
 };
 

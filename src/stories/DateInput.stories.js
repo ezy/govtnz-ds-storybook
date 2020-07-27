@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/DateInput.css";
+import "../template-sources/govtnz-import/DateInput.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "DateInput",
 };
 

@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/Alert.css";
+import "../template-sources/govtnz-import/Alert.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "Alert",
 };
 

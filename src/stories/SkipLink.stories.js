@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/SkipLink.css";
+import "../template-sources/govtnz-import/SkipLink.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "SkipLink",
 };
 

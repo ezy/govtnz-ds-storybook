@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/Radio.css";
+import "../template-sources/govtnz-import/Radio.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "Radio",
 };
 

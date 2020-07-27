@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/DiaLogo.css";
+import "../template-sources/govtnz-import/DiaLogo.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "DiaLogo",
 };
 

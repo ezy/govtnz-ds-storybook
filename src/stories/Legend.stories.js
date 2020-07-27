@@ -1,8 +1,8 @@
 import { html } from "lit-html";
-import "../template-sources/nzgovt-import/Legend.css";
+import "../template-sources/govtnz-import/Legend.css";
 
 export default {
-  title: "nzgovt-import",
+  title: "govtnz-import",
   component: "Legend",
 };
 

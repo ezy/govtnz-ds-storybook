@@ -15,7 +15,7 @@ The philosophy behind it's build aims to:
 
 ## Method
 
-It uses the html and css templates in the npm package "@govtnz/ds" to:
+It uses the html and css templates in the npm package `@govtnz/ds` to:
 
 - Auto-import govtnz templates with `yarn update:govtnz`
 - Auto-generate templates with `yarn build:govtnz` from the govtnz html and css output components in `src/template-sources/govtnz-import`

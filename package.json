@@ -9,7 +9,7 @@
   "scripts": {
     "build:govtnz": "node bin/build-govtnz.js",
     "build:stories": "node bin/build-storybook.js && yarn lint",
-    "build:storybook": "build-storybook",
+    "build:storybook": "build-storybook --output-dir docs",
     "postinstall": "yarn requirements-check",
     "requirements-check": "node bin/check-node-version.js",
     "storybook": "start-storybook -p 6006",

@@ -27,12 +27,7 @@ import "../template-sources/${sourceFolder}/${nameSpace}.css";
 
 <Meta title="${sourceFolder}/${nameSpace}" />
 
-## Story definition
-
-Hallelujah! HTML is working out of the box without modification.
-How you like them apples?!
-
-${mdxFile}
+${mdxFile ? mdxFile : `No custom docs for ${sourceFolder}/${nameSpace}`}
 
 <Preview>
   <Story name="${nameSpace}" height="100px">

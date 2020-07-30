@@ -25,7 +25,7 @@ import "../template-sources/${sourceFolder}/${nameSpace}.css";
 
 # Storybook Docs for ${nameSpace}
 
-<Meta title="${sourceFolder}" />
+<Meta title="${sourceFolder}/${nameSpace}" />
 
 ## Story definition
 

@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/FieldsetBlock.css";
 
@@ -12,6 +13,20 @@ import "../template-sources/govtnz-import/FieldsetBlock.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="FieldsetBlock" height="100px">
-  {` <div class="g-fieldsetBlock-form-group">  <fieldset class="g-fieldsetBlock-fieldset">    <legend class="g-fieldsetBlock-fieldset__legend">      Legend text    </legend>    <div class="g-fieldsetBlock-hint">      Hint text    </div>    <div class="g-fieldsetBlock-error-message">      <span class="g-fieldsetBlock-visually-hidden">        Error:      </span>      Error text    </div>    <div>Fieldset contents</div>  </fieldset></div> `}
-</Story>
+<Preview>
+  <Story name="FieldsetBlock" height="100px">
+    {html`
+      <div class="g-fieldsetBlock-form-group">
+        <fieldset class="g-fieldsetBlock-fieldset">
+          <legend class="g-fieldsetBlock-fieldset__legend">Legend text</legend>
+          <div class="g-fieldsetBlock-hint">Hint text</div>
+          <div class="g-fieldsetBlock-error-message">
+            <span class="g-fieldsetBlock-visually-hidden"> Error: </span> Error
+            text
+          </div>
+          <div>Fieldset contents</div>
+        </fieldset>
+      </div>
+    `}
+  </Story>
+</Preview>

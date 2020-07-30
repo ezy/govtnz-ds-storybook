@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/MainNavLink.css";
 
@@ -12,6 +13,12 @@ import "../template-sources/govtnz-import/MainNavLink.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="MainNavLink" height="100px">
-  {` <li class="g-main-nav__link">  <a class="g-main-nav__link__a" href="example">    Example item text  </a></li> `}
-</Story>
+<Preview>
+  <Story name="MainNavLink" height="100px">
+    {html`
+      <li class="g-main-nav__link">
+        <a class="g-main-nav__link__a" href="example"> Example item text </a>
+      </li>
+    `}
+  </Story>
+</Preview>

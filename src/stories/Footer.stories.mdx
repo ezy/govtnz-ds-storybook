@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/Footer.css";
 
@@ -12,6 +13,12 @@ import "../template-sources/govtnz-import/Footer.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="Footer" height="100px">
-  {` <footer class="g-footer" role="contentinfo">  Example footer content</footer> `}
-</Story>
+<Preview>
+  <Story name="Footer" height="100px">
+    {html`
+      <footer class="g-footer" role="contentinfo">
+        Example footer content
+      </footer>
+    `}
+  </Story>
+</Preview>

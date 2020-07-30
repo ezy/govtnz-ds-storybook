@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/FlexColumn.css";
 
@@ -12,6 +13,12 @@ import "../template-sources/govtnz-import/FlexColumn.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="FlexColumn" height="100px">
-  {` <div  class="g-flex-col g-flex-col-xs-hidden g-flex-col-sm-hidden g-flex-col-md-hidden g-flex-col-lg-hidden g-flex-col-xs-offset-0 g-flex-col-sm-offset-0 g-flex-col-md-offset-0 g-flex-col-lg-offset-0 g-flex-start-xs g-flex-start-sm g-flex-start-md g-flex-start-lg example"></div> `}
-</Story>
+<Preview>
+  <Story name="FlexColumn" height="100px">
+    {html`
+      <div
+        class="g-flex-col g-flex-col-xs-hidden g-flex-col-sm-hidden g-flex-col-md-hidden g-flex-col-lg-hidden g-flex-col-xs-offset-0 g-flex-col-sm-offset-0 g-flex-col-md-offset-0 g-flex-col-lg-offset-0 g-flex-start-xs g-flex-start-sm g-flex-start-md g-flex-start-lg example"
+      ></div>
+    `}
+  </Story>
+</Preview>

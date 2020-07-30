@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/H1.css";
 
@@ -12,6 +13,8 @@ import "../template-sources/govtnz-import/H1.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="H1" height="100px">
-  {` <h1 class="g-heading g-heading-xl">  Example text</h1> `}
-</Story>
+<Preview>
+  <Story name="H1" height="100px">
+    {html` <h1 class="g-heading g-heading-xl">Example text</h1> `}
+  </Story>
+</Preview>

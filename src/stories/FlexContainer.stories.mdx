@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/FlexContainer.css";
 
@@ -12,6 +13,8 @@ import "../template-sources/govtnz-import/FlexContainer.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="FlexContainer" height="100px">
-  {` <div class="g-flex-container">  Rows...</div> `}
-</Story>
+<Preview>
+  <Story name="FlexContainer" height="100px">
+    {html` <div class="g-flex-container">Rows...</div> `}
+  </Story>
+</Preview>

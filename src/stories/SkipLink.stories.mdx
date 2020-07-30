@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/SkipLink.css";
 
@@ -12,6 +13,8 @@ import "../template-sources/govtnz-import/SkipLink.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="SkipLink" height="100px">
-  {` <a class="g-skip-link" href="example">Skip to main content</a> `}
-</Story>
+<Preview>
+  <Story name="SkipLink" height="100px">
+    {html` <a class="g-skip-link" href="example">Skip to main content</a> `}
+  </Story>
+</Preview>

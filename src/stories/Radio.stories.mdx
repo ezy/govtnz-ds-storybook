@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/Radio.css";
 
@@ -12,6 +13,8 @@ import "../template-sources/govtnz-import/Radio.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="Radio" height="100px">
-  {` <input class="g-radios__input" name="example" type="radio" /> `}
-</Story>
+<Preview>
+  <Story name="Radio" height="100px">
+    {html` <input class="g-radios__input" name="example" type="radio" /> `}
+  </Story>
+</Preview>

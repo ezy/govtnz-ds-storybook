@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/CaptionM.css";
 
@@ -12,6 +13,8 @@ import "../template-sources/govtnz-import/CaptionM.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="CaptionM" height="100px">
-  {` <span class="g-caption g-caption-m">  Example text</span> `}
-</Story>
+<Preview>
+  <Story name="CaptionM" height="100px">
+    {html` <span class="g-caption g-caption-m"> Example text</span> `}
+  </Story>
+</Preview>

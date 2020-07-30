@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/Alert.css";
 
@@ -12,6 +13,57 @@ import "../template-sources/govtnz-import/Alert.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="Alert" height="100px">
-  {` <div aria-atomic="true" aria-live="polite" role="note">  <div class="g-alert g-alert--info">    Example alert content  </div></div><div role="note">  <div class="g-alert g-alert--info">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note">  <div class="g-alert g-alert--warning">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note">  <div class="g-alert g-alert--warning">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">  <div class="g-alert g-alert--success">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">  <div class="g-alert g-alert--success">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">  <div class="g-alert g-alert--error">    Example alert content  </div></div><div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">  <div class="g-alert g-alert--error">    Example alert content  </div></div><div role="note">  <div class="g-alert g-alert--info">    Example alert content  </div></div><div role="note">  <div class="g-alert g-alert--info">    Example alert content  </div></div><div role="note">  <div class="g-alert g-alert--warning">    Example alert content  </div></div><div role="note">  <div class="g-alert g-alert--warning">    Example alert content  </div></div><div role="note" tabindex="-1">  <div class="g-alert g-alert--success">    Example alert content  </div></div><div role="note" tabindex="-1">  <div class="g-alert g-alert--success">    Example alert content  </div></div><div role="note" tabindex="-1">  <div class="g-alert g-alert--error">    Example alert content  </div></div><div role="note" tabindex="-1">  <div class="g-alert g-alert--error">    Example alert content  </div></div> `}
-</Story>
+<Preview>
+  <Story name="Alert" height="100px">
+    {html`
+      <div aria-atomic="true" aria-live="polite" role="note">
+        <div class="g-alert g-alert--info">Example alert content</div>
+      </div>
+      <div role="note">
+        <div class="g-alert g-alert--info">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note">
+        <div class="g-alert g-alert--warning">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note">
+        <div class="g-alert g-alert--warning">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+        <div class="g-alert g-alert--success">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+        <div class="g-alert g-alert--success">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+        <div class="g-alert g-alert--error">Example alert content</div>
+      </div>
+      <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
+        <div class="g-alert g-alert--error">Example alert content</div>
+      </div>
+      <div role="note">
+        <div class="g-alert g-alert--info">Example alert content</div>
+      </div>
+      <div role="note">
+        <div class="g-alert g-alert--info">Example alert content</div>
+      </div>
+      <div role="note">
+        <div class="g-alert g-alert--warning">Example alert content</div>
+      </div>
+      <div role="note">
+        <div class="g-alert g-alert--warning">Example alert content</div>
+      </div>
+      <div role="note" tabindex="-1">
+        <div class="g-alert g-alert--success">Example alert content</div>
+      </div>
+      <div role="note" tabindex="-1">
+        <div class="g-alert g-alert--success">Example alert content</div>
+      </div>
+      <div role="note" tabindex="-1">
+        <div class="g-alert g-alert--error">Example alert content</div>
+      </div>
+      <div role="note" tabindex="-1">
+        <div class="g-alert g-alert--error">Example alert content</div>
+      </div>
+    `}
+  </Story>
+</Preview>

@@ -1,5 +1,6 @@
 import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
+import { html } from "lit-html";
 
 import "../template-sources/govtnz-import/Ol.css";
 
@@ -12,6 +13,12 @@ import "../template-sources/govtnz-import/Ol.css";
 Hallelujah! HTML is working out of the box without modification.
 How you like them apples?!
 
-<Story name="Ol" height="100px">
-  {` <ol class="g-ol">  Example text</ol> `}
-</Story>
+<Preview>
+  <Story name="Ol" height="100px">
+    {html`
+      <ol class="g-ol">
+        Example text
+      </ol>
+    `}
+  </Story>
+</Preview>

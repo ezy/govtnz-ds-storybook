@@ -19,5 +19,11 @@ It uses the html and css templates in the npm package `@govtnz/ds` to:
 
 - Auto-import govtnz templates with `yarn update:govtnz`
 - Auto-generate templates with `yarn build:govtnz` from the govtnz html and css output components in `src/template-sources/govtnz-import`
+
+Once the templates have been imported you can overide and customise them:
+
 - Overide templates with any custom elements with `src/template-sources/custom`
+- Use a namespaced set of html, css and mdx files to generate stories with docs (eg. `A.html, A.css, A.mdx`)
 - Auto-generate a storybook component library from the merged template files with `yarn build:stories`
+
+Then you can generate a storybook component library using `yarn storybook`

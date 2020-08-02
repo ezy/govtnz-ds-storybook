@@ -3,6 +3,7 @@ import { action } from "@storybook/addon-actions";
 import { html } from "lit-html";
 
 import "../template-sources/custom/A.css";
+import "../template-sources/custom/A";
 
 # Storybook Docs for A
 
@@ -20,6 +21,6 @@ In this case the three files that you can use to compile a full story would be:
 
 <Preview>
   <Story name="A" height="100px">
-    {html` <a class="g-link example" href="example"> Example text</a> `}
+    {html` <a id="link" class="g-link example" href="example"> Example text</a> `}
   </Story>
 </Preview>

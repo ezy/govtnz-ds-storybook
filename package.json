@@ -7,16 +7,17 @@
     "node": ">=13.14.0"
   },
   "scripts": {
+    "build:components": "node bin/build-templates.js",
     "build:govtnz": "node bin/build-govtnz.js",
     "build:stories": "node bin/build-storybook.js && yarn lint",
     "build:storybook": "build-storybook --output-dir docs",
+    "lint": "yarn prettier --write .",
     "postinstall": "yarn requirements-check",
     "requirements-check": "node bin/check-node-version.js",
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
     "update:govtnz": "yarn add -D @govtnz/ds",
-    "upgrade:govtnz": "yarn update:govtnz && yarn build:govtnz && yarn build:stories",
-    "lint": "yarn prettier --write ."
+    "upgrade:govtnz": "yarn update:govtnz && yarn build:govtnz && yarn build:stories"
   },
   "keywords": [],
   "author": "",

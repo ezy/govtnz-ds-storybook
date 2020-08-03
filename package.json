@@ -7,7 +7,7 @@
     "node": ">=13.14.0"
   },
   "scripts": {
-    "build:components": "node bin/build-templates.js",
+    "build:components": "node -r esm bin/build-templates.js",
     "build:govtnz": "node bin/build-govtnz.js",
     "build:stories": "node bin/build-storybook.js && yarn lint",
     "build:storybook": "build-storybook --output-dir docs",
@@ -44,6 +44,7 @@
     "@storybook/source-loader": "6.0.0-rc.18",
     "@storybook/web-components": "6.0.0-rc.18",
     "babel-loader": "8.1.0",
+    "esm": "3.2.25",
     "fs-extra": "^9.0.1",
     "glob-promise": "^3.4.0",
     "jsdom": "16.3.0",

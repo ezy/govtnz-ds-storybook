@@ -1,9 +1,9 @@
-const fs = require("fs");
-const jsdom = require("jsdom");
-const glob = require("glob-promise");
-const path = require("path");
+import fs from "fs";
+import jsdom from "jsdom";
+import glob from "glob-promise";
+import path from "path";
 
-const { generateTemplates } = require("metacomponent");
+import { generateTemplates } from "metacomponent";
 
 const fsPromises = fs.promises;
 const { JSDOM } = jsdom;
@@ -14,7 +14,7 @@ const { JSDOM } = jsdom;
  */
 const generateFilesOfType = "REACT";
 
-const templateType = (type, nameSpace) => {
+export const templateType = (type, nameSpace) => {
   const templates = {
     REACT: `react/${nameSpace}.tsx`,
     REACT_STYLED: `react-styled-components/${nameSpace}.tsx`,
@@ -25,7 +25,7 @@ const templateType = (type, nameSpace) => {
   return templates[type];
 };
 
-const makeJSFiles = async (sourceFolder) => {
+export const makeJSFiles = async (sourceFolder, outputFolder) => {
   console.log(`started components build for ${sourceFolder}`);
   let writeJS = async (nameSpace) => {
     const filePath = `src/template-sources/${sourceFolder}/${nameSpace}`;
@@ -48,10 +48,8 @@ const makeJSFiles = async (sourceFolder) => {
       });
       jsdomInstance.window.close();
       const fileNameSpace = templateType(generateFilesOfType, nameSpace);
-      const target = `dist/${fileNameSpace}`;
-      await fsPromises.mkdir(`dist/${generateFilesOfType.toLowerCase()}`, {
-        recursive: true,
-      });
+      const target = `${outputFolder}/${fileNameSpace}`;
+      await fsPromises.mkdir( `${outputFolder}/${generateFilesOfType.toLowerCase()}`, { recursive: true, }, );
       fs.writeFileSync(target, result.files[fileNameSpace]);
       return;
     } catch (error) {
@@ -73,6 +71,6 @@ const makeJSFiles = async (sourceFolder) => {
 };
 
 (async function () {
-  await makeJSFiles("govtnz-import");
-  await makeJSFiles("custom");
+  await makeJSFiles("govtnz-import", "dist");
+  await makeJSFiles("custom", "dist");
 })();

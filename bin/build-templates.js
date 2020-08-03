@@ -26,6 +26,7 @@ const templateType = (type, nameSpace) => {
 };
 
 const makeJSFiles = async (sourceFolder) => {
+  console.log(`started components build for ${sourceFolder}`);
   let writeJS = async (nameSpace) => {
     const filePath = `src/template-sources/${sourceFolder}/${nameSpace}`;
     let htmlFile = "",
@@ -52,6 +53,7 @@ const makeJSFiles = async (sourceFolder) => {
         recursive: true,
       });
       fs.writeFileSync(target, result.files[fileNameSpace]);
+      return;
     } catch (error) {
       throw new Error(error);
     }
@@ -67,7 +69,10 @@ const makeJSFiles = async (sourceFolder) => {
       writeJS(fileBaseName);
     })
   ];
+  console.log(`finished components build for ${sourceFolder}`);
 };
 
-makeJSFiles("govtnz-import");
-makeJSFiles("custom");
+(async function () {
+  await makeJSFiles("govtnz-import");
+  await makeJSFiles("custom");
+})();

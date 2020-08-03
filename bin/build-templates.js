@@ -3,7 +3,8 @@ import jsdom from "jsdom";
 import glob from "glob-promise";
 import path from "path";
 
-import { generateTemplates } from "metacomponent";
+import * as metacomponent from "metacomponent";
+const { generateTemplates } = metacomponent.default;
 
 const fsPromises = fs.promises;
 const { JSDOM } = jsdom;
@@ -49,7 +50,10 @@ export const makeJSFiles = async (sourceFolder, outputFolder) => {
       jsdomInstance.window.close();
       const fileNameSpace = templateType(generateFilesOfType, nameSpace);
       const target = `${outputFolder}/${fileNameSpace}`;
-      await fsPromises.mkdir( `${outputFolder}/${generateFilesOfType.toLowerCase()}`, { recursive: true, }, );
+      await fsPromises.mkdir(
+        `${outputFolder}/${generateFilesOfType.toLowerCase()}`,
+        { recursive: true },
+      );
       fs.writeFileSync(target, result.files[fileNameSpace]);
       return;
     } catch (error) {

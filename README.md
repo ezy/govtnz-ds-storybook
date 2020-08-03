@@ -27,3 +27,7 @@ Once the templates have been imported you can overide and customise them:
 - Auto-generate a storybook component library from the merged template files with `yarn build:stories`
 
 Then you can generate a storybook component library using `yarn storybook`
+
+## Generate component export
+
+You can generate components from all the templates using `yarn build:components`. They'll build to `dist/<type>`. You can select which type you'll build in `bin/build-templates.js` by adjusting `const generateFilesOfType = "REACT";`. The list of types exist as a map in `templateType()`.

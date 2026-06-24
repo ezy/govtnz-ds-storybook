@@ -24,7 +24,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.10.4",
+    "@babel/core": "7.29.6",
     "@govtnz/ds": "0.2.2",
     "@storybook/addon-a11y": "6.0.0-rc.18",
     "@storybook/addon-actions": "6.0.0-rc.18",
